@@ -2,42 +2,80 @@
 title: Home
 layout: PageLayout
 sections:
-  - type: HeroSection
-    elementId: homepage-hero-1
+  - elementId: ''
     colors: colors-a
-    title: 'Love where you work, because work loves you'
-    text: >
-      One platform, one community, getting to the bottom line of everything
-      employment.  Figure out your benefits, practice for interviews, get
-      mentored, help peers, get helped in return.
+    backgroundImage: null
+    title: Let's do this...
+    text: >-
+      The Stackbit theme is flexible and scalable to every need. It can manage
+      any layout and any screen.
     actions:
       - type: Button
-        label: Sign up
-        url: 'https://www.stackbit.com/'
+        label: Try it now
+        url: /
         style: primary
-        elementId: hero-main-button
-    media:
-      type: ImageBlock
-      url: /images/hero-1.png
-      altText: Image alt text
-      caption: Image caption
     styles:
       self:
         height: auto
-        width: wide
+        width: narrow
         margin:
           - mt-0
-          - mb-11
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-24
+          - pb-24
+          - pl-4
+          - pr-4
+        alignItems: center
+        justifyContent: center
+        flexDirection: col
+      title:
+        textAlign: left
+      text:
+        textAlign: left
+      actions:
+        justifyContent: flex-start
+    type: CtaSection
+  - colors: colors-h
+    elementId: ''
+    title: Need Answers?
+    subtitle: The section subtitle
+    items:
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation, At the office, working together is often a
+          distruction, on remote, it could be motivation, At the office, working
+          together is often a distruction, on remote, it could be motivation
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation, At the office, working together is often a
+          distruction, on remote, it could be motivation, At the office, working
+          together is often a distruction, on remote, it could be motivation
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation, At the office, working together is often a
+          distruction, on remote, it could be motivation, At the office, working
+          together is often a distruction, on remote, it could be motivation
+    styles:
+      self:
+        height: auto
+        width: narrow
+        margin:
+          - mt-0
+          - mb-0
           - ml-0
           - mr-0
         padding:
           - pt-12
           - pb-12
-          - pr-4
           - pl-4
-        alignItems: center
+          - pr-4
         justifyContent: center
-        flexDirection: row
         borderRadius: none
         borderWidth: 0
         borderStyle: none
@@ -45,11 +83,10 @@ sections:
       title:
         textAlign: left
       subtitle:
+        fontWeight: '400'
+        fontStyle: normal
         textAlign: left
-      text:
-        textAlign: left
-      actions:
-        justifyContent: flex-start
+    type: FaqSection
   - elementId: ''
     colors: colors-f
     title: Where did everyone go?
@@ -101,6 +138,54 @@ sections:
         self:
           opacity: 100
       type: ImageBlock
+  - type: HeroSection
+    elementId: homepage-hero-1
+    colors: colors-a
+    title: Love where you work.?????
+    text: >
+      One platform, one community, getting to the bottom line of everything
+      employment.  Figure out your benefits, practice for interviews, get
+      mentored, help peers, get helped in return.
+    actions:
+      - type: Button
+        label: Sign up
+        url: 'https://www.stackbit.com/'
+        style: primary
+        elementId: hero-main-button
+    media:
+      type: ImageBlock
+      url: /images/hero-1.png
+      altText: Image alt text
+      caption: Image caption
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-11
+          - ml-0
+          - mr-0
+        padding:
+          - pt-12
+          - pb-12
+          - pr-4
+          - pl-4
+        alignItems: center
+        justifyContent: center
+        flexDirection: row
+        borderRadius: none
+        borderWidth: 0
+        borderStyle: none
+        borderColor: border-dark
+      title:
+        textAlign: left
+      subtitle:
+        textAlign: left
+      text:
+        textAlign: left
+      actions:
+        justifyContent: flex-start
   - colors: colors-h
     elementId: ''
     images:
@@ -134,7 +219,7 @@ sections:
         caption: ZCOOL
     spacing: 3
     columns: 7
-    aspectRatio: 'auto'
+    aspectRatio: auto
     showCaption: false
     enableHover: false
     styles:
